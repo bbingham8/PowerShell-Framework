@@ -1,18 +1,11 @@
-# Modular PowerShell Security Framework
+## Modular PowerShell Security Framework
 
-A hardened, modular PowerShell environment designed for **Operational Security (OpSec)**.
+A hardened, modular PowerShell environment designed for **Operational Security (OpSec)** and workflow automation.
 
-## 📊 System Logic Flow
+### Core Features
+* **VPN-Gated Execution**: Prevents IP leakage by validating VPN status before launching web-facing processes.
+* **Modular Architecture**: Separates public automation logic from private, local configurations.
+* **Automated Data Lifecycle**: Implements the Invoke-Backup engine to manage data archival and local directory hygiene.
 
-`mermaid
-graph TD
-    A[User Command] --> B{VPN Active?}
-    B -- No --> C[Write-Warning: VPN Required]
-    B -- Yes --> D[Start-SecureProcess]
-    D --> E[Launch Application with Privacy Flags]
-    
-    subgraph Data Management
-    F[Invoke-Backup] --> G[Create Dated Archive]
-    G --> H[Mirror Folder Tree]
-    H --> I[Purge Local Files]
-    end
+### Author
+**Barrie Bingham** (bbingham8)
