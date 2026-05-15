@@ -19,4 +19,4 @@ Includes an `Invoke-Backup` engine that automates the transition of data from lo
 * **Environment:** Hardened Windows/Linux (SOC-focused)
 
 ## 👨‍💻 Author
-**Barrie Bingham** (bbingham8)
+**bbingham8**
